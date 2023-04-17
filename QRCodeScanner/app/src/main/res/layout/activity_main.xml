@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/zeskanuj_kod_qr_hulajnogi"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            style="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Camera_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/kamera"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            android:layout_weight="1"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_dark"/>
+
+        <ImageView
+            android:id="@+id/Scan_image"
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_height="280dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/obraz"
+            android:src="@drawable/ic_baseline_qr_code_scanner_24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/holo_blue_dark"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Scan_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/skanowanie"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            android:layout_weight="1"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/informacje"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            style="@style/TextAppearance.MaterialComponents.Headline5"/>
+
+        <TextView
+            android:id="@+id/Id_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            style="@style/TextAppearance.MaterialComponents.Headline5"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

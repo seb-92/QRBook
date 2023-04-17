@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">QRbook</string>
+    <string name="zeskanuj_kod_qr_hulajnogi">Zeskanuj Kod QR książki</string>
+    <string name="obraz">Obraz</string>
+    <string name="skanowanie">Skanowanie</string>
+    <string name="informacje">Informacje:</string>
+    <string name="kamera">kamera</string>
+    <string name="wypozycz_hulajnoge">Wypożycz książke</string>
+    <string name="wypozycz">wypożycz</string>
+    <string name="powrot">Powrot</string>
+    <string name="powrót">powrót</string>
+    <string name="zwroc">Zwróć</string>
+    <string name="zaloguj">zaloguj</string>
+    <string name="zaloguj_si">Zaloguj się</string>
+    <string name="witaj_w_aplikacji_qrbook">Witaj w aplikacji QRbook</string>
+    <string name="informacje_o_ksi_ce"><u>Informacje o książce:</u></string>
+    <string name="rejestracja">Rejestracja</string>
+    <string name="za_konto">załóż konto</string>
+    <string name="adres">Adres</string>
+    <string name="imi">Imię</string>
+    <string name="nazwisko">Nazwisko</string>
+    <string name="login">Login</string>
+    <string name="has_o">Hasło</string>
+    <string name="Has_o">hasło</string>
+    <string name="Hasło">Hasło</string>
+    <string name="zarejestruj_si">Zarejestruj się</string>
+    <string name="wyszukaj_ksi_k">Wyszukaj książkę</string>
+    <string name="wypo_ycz_ksi_k">Wypożycz książkę</string>
+    <string name="moje_ksi_ki">Moje książki</string>
+    <string name="menu_g_wne">Menu Główne</string>
+    <string name="wypo_yczone_ksi_ki">Wypożyczone Książki</string>
+    <string name="brak_wypo_yczonych_ksi_ek">Brak wypożyczonych książek</string>
+    <string name="wyloguj">Wyloguj</string>
+    <string name="filtr">Filtr</string>
+    <string name="historia_wypo_ycze">Historia wypożyczeń</string>
+    <string name="historia_wypo_yczed">Historia wypożyczeń</string>
+
+    <string-array name="Book_choices">
+        <item>Tytuł</item>
+        <item>Autor</item>
+        <item>Rok Wydania</item>
+    </string-array>
+</resources>

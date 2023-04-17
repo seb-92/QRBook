@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:text="@string/menu_g_wne"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/UserLoan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/transparent"
+            android:text="@string/wypo_ycz_ksi_k"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/Search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:text="@string/wyszukaj_ksi_k"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/UserBook_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:text="@string/moje_ksi_ki"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/History_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:text="@string/historia_wypo_yczed"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/Logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="90dp"
+            android:background="@android:color/transparent"
+            android:text="@string/wyloguj"
+            android:textAllCaps="false"
+            android:textColor="#C11616"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</ScrollView>

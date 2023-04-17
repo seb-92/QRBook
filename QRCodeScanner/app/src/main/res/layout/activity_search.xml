@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Wyszukaj książkę"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            style="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="5">
+
+            <EditText
+                android:id="@+id/txt_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Wyszukiwanie" />
+
+
+            <Button
+                android:layout_weight="3"
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wyszukaj"
+                app:backgroundTint="@android:color/holo_blue_dark"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Filtr wyszukiwania:"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            style="@style/TextAppearance.AppCompat.Headline"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:hint="@string/filtr"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/holo_blue_dark"/>
+
+        <ListView
+            android:id="@+id/bookslist"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+
+    </LinearLayout>
+
+</ScrollView>
