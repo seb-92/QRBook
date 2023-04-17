@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+
+    <preConditions>
+        <runningAs username="admin"/>
+    </preConditions>
+
+    <changeSet id="0" author="jczajka">
+        <comment>Inicjacja tabel</comment>
+        <sqlFile dbms="postgresql" path="01-create_tables.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+    <changeSet id="1" author="jczajka">
+        <comment>Dodanie wartości początkowych</comment>
+        <sqlFile dbms="postgresql" path="02-create_predata.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,23 @@
+version: "3.4"
+services:
+  database:
+    environment:
+      - POSTGRES_USER=${DATABASE_LOGIN}
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+      - POSTGRES_DB=${DATABASE_NAME}
+    container_name: system_database
+    volumes:
+      - ${VOLUME_LOCATION}
+    ports:
+      - ${DATABASE_PORT}
+    restart:
+      always
+    image: postgres:latest
+volumes:
+  db:
+    driver: local
+networks:
+  default:
+    name: WirtualnaKsiegarnia
+    driver: bridge
+    external: false
